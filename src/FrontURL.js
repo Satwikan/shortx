@@ -1,1 +1,1 @@
-export const FRONT_URL = "https://shortx.netlify.app/";
+export const FRONT_URL = "https://shortx.netlify.app";
