@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Forward from "./pages/Forward";
 import NotFound from "./pages/NotFound";
@@ -11,7 +11,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/error" component={NotFound} />
+          <Route exact path="/404" component={NotFound} />
           <Route exact path="/all" component={AllUrls} />
           <Route exact path="/l/:code" component={Forward} />
         </Switch>
