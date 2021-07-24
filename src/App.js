@@ -11,7 +11,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/404" component={NotFound} />
+          <Route exact path="/error" component={NotFound} />
           <Route exact path="/all" component={AllUrls} />
           <Route exact path="/l/:code" component={Forward} />
         </Switch>
