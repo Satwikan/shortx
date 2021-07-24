@@ -6,22 +6,19 @@ function Forward() {
   const code = useParams()["code"];
   const history = useHistory();
   //   const [url, SetUrl]
-
   useEffect(() => {
     db.collection("urls")
       .where("code", "==", code)
       .get()
       .then((querySnapshot) => {
+        console.log(querySnapshot);
+        if (querySnapshot.docs.length === 0) {
+          console.log("Inside IF");
+          history.push("/404");
+        }
         querySnapshot.forEach((doc) => {
           // doc.data() is never undefined for query doc snapshots
-          if (doc.data().empty) {
-            alert("No Such Url");
-            history.push("/");
-          }
-          // Navigate to the Location.reload article by replacing this page
-          window.location.replace(
-            doc.data().url
-          );
+          window.location.replace(doc.data().url);
           console.log(doc.id, " => ", doc.data());
         });
       })
@@ -29,7 +26,7 @@ function Forward() {
         console.log("Error getting documents: ", error);
       });
   }, []);
-  return <div></div>;
+  return <></>;
 }
 
 export default Forward;
