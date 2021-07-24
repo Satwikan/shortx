@@ -90,7 +90,7 @@ function AllUrls() {
           count++;
           let d = item.data();
           d.count = count;
-          d.code = <Link url={`${FRONT_URL}/l/${item.data().code}`} />;
+          d.code = <Link url={`${FRONT_URL}/#/l/${item.data().code}`} />;
           d.url = <Link url={item.data().url} />;
           console.log(d);
           return d;
