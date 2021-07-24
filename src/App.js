@@ -13,7 +13,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/404" component={NotFound} />
           <Route exact path="/all" component={AllUrls} />
-          <Route path="/l/:code" component={Forward} />
+          <Route exact path="/l/:code" component={Forward} />
         </Switch>
       </Router>
     </div>

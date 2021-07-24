@@ -44,7 +44,7 @@ function Home() {
         url: url,
         code: code,
       });
-      setShortUrl(`${FRONT_URL}/l/${code}`);
+      setShortUrl(`${FRONT_URL}/#/l/${code}`);
     } catch (e) {
       console.log("Error", e);
     }
