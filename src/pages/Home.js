@@ -104,7 +104,7 @@ function Home() {
         <p style={styles.title}>ShortX</p>
       </div>
       <p style={{ fontSize: "1.5rem", marginTop: -"55px" }}>
-        Short Your Long URLs
+        Short Your Long URLs{" "}
       </p>
       by{" "}
       <a
