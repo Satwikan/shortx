@@ -106,6 +106,18 @@ function Home() {
       <p style={{ fontSize: "1.5rem", marginTop: -"55px" }}>
         Short Your Long URLs
       </p>
+      by{" "}
+      <a
+        href="https://github.com/Satwikan"
+        target="_blank"
+        style={{
+          textDecoration: "underline",
+          textBreak: "break-all",
+          color: "rgb(245,123,103)",
+        }}
+      >
+        satwikan
+      </a>
       <div style={styles.form}>
         <img src={HomeImage} alt="home" style={styles.homeImage} />
         <div
@@ -167,25 +179,6 @@ function Home() {
           </button>
         </div>
       </div>
-      <hr />
-      <p
-        style={{
-          textAlign: "center",
-        }}
-      >
-        Made by{" "}
-        <a
-          href="https://github.com/Satwikan"
-          target="_blank"
-          style={{
-            textDecoration: "underline",
-            textBreak: "break-all",
-            color: "rgb(245,123,103)",
-          }}
-        >
-          satwikan
-        </a>
-      </p>
     </div>
   );
 }
