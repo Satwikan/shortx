@@ -146,9 +146,7 @@ function Home() {
                     color: "rgb(245,123,103)",
                   }}
                 >
-                  {shortUrl.slice(0, shortUrl.length / 2)}
-                  <br />
-                  {shortUrl.slice(shortUrl.length / 2)}
+                  {shortUrl}
                 </a>
                 {}
               </div>

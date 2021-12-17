@@ -30,7 +30,7 @@ const styles = {
 };
 
 function AllUrls() {
-  let tableWidth = "800px";
+  let tableWidth = "1000px";
   const isTabletOrMobileDevice = useMediaQuery({
     query: "(max-device-width: 768px)",
   });
