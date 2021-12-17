@@ -167,6 +167,25 @@ function Home() {
           </button>
         </div>
       </div>
+      <hr />
+      <p
+        style={{
+          textAlign: "center",
+        }}
+      >
+        Made by{" "}
+        <a
+          href="https://github.com/Satwikan"
+          target="_blank"
+          style={{
+            textDecoration: "underline",
+            textBreak: "break-all",
+            color: "rgb(245,123,103)",
+          }}
+        >
+          satwikan
+        </a>
+      </p>
     </div>
   );
 }
