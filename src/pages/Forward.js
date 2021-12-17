@@ -7,6 +7,7 @@ function Forward() {
   const history = useHistory();
   //   const [url, SetUrl]
   useEffect(() => {
+    console.log(code)
     db.collection("urls")
       .where("code", "==", code)
       .get()
