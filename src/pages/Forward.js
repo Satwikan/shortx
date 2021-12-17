@@ -25,7 +25,7 @@ function Forward() {
       .catch((error) => {
         console.log("Error getting documents: ", error);
       });
-  }, []);
+  }, [code, history]);
   return <></>;
 }
 

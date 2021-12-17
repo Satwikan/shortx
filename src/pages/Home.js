@@ -38,13 +38,14 @@ function Home() {
       alert("We can't do empty url😓");
       return;
     }
-    let code = uuidv4();
+    let code = uuidv4().slice(0, 5);
+    console.log(code);
     try {
       await db.collection("urls").add({
         url: url,
         code: code,
       });
-      setShortUrl(`${FRONT_URL}/#/l/${code}`);
+      setShortUrl(`${FRONT_URL}/${code}`);
     } catch (e) {
       console.log("Error", e);
     }
@@ -124,10 +125,13 @@ function Home() {
               placeholder="https://www.youtube.com/wat..."
               style={{ height: "2rem" }}
             />
-            <ArrowForwardIcon
+            <button
               onClick={handleFormSubmit}
-              style={{ height: "3rem" }}
-            />
+              type="button"
+              style={{ backgroundColor: "transparent", border: 0 }}
+            >
+              <ArrowForwardIcon style={{ height: "3rem" }} />
+            </button>
           </div>
           <div>
             {shortUrl ? (
