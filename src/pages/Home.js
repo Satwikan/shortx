@@ -145,6 +145,7 @@ function Home() {
                     textBreak: "break-all",
                     color: "rgb(245,123,103)",
                   }}
+                  target="_blank"
                 >
                   {shortUrl}
                 </a>
